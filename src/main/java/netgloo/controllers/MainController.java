@@ -20,13 +20,13 @@ public class MainController {
 
   @RequestMapping("/home")
   @ResponseBody
-  public String Index() {
+  public String home() {
     return "Proudly handcrafted by " +
         "<a href='http://netgloo.com/en'>Netgloo</a> :)";
   }
 
   @RequestMapping("/")
-  public String home(Model model) {
+  public String Index(Model model) {
       List<User> list = userDao.findAll();
       String s = "";
       for(User u:list) {
