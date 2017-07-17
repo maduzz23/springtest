@@ -18,14 +18,14 @@ public class MainController {
 	 @Autowired
 	  private UserDao userDao;
 
-  @RequestMapping("/")
+  @RequestMapping("/home")
   @ResponseBody
   public String Index() {
     return "Proudly handcrafted by " +
         "<a href='http://netgloo.com/en'>Netgloo</a> :)";
   }
 
-  @RequestMapping("/home")
+  @RequestMapping("/")
   public String home(Model model) {
       List<User> list = userDao.findAll();
       String s = "";
