@@ -22,7 +22,7 @@ public class MainController {
   @ResponseBody
   public String home() {
     return "Proudly handcrafted by " +
-        "<a href='http://netgloo.com/en'>Netgloo</a> :)";
+        "<a href='http://netgloo.com/en'>click me</a> :)";
   }
 
   @RequestMapping("/")
